@@ -1,0 +1,22 @@
+@import url('./assets/css/header.css');
+
+:root {
+    --main-font: 'Montserrat', sans-serif;
+    --primary-gray: #464646;
+    --primary-white: #FFFFFF;
+    --second-white: #A3A3A3;
+    --primary-blue: #4894FF;
+    --primary-orange: #FFB050;
+    --main-background:#E5E5E5;    
+}
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--main-font);
+}

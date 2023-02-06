@@ -1,0 +1,31 @@
+.main-header {
+    display: grid;
+    grid-template-columns: calc(57px + 1rem) auto auto;
+    margin: 1rem;
+}
+
+.header__avatar--photo {
+    width: 57px;
+    align-self: center;
+    grid-row: 1/3;
+    grid-column: 1/2;
+    border-radius: 32px;
+}
+
+.header__avatar--name {
+    margin: auto 0;
+    grid-row: 1/2;
+    align-self: center;
+    grid-column: 2/3;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary-gray);
+}
+
+.avatar__info {
+    margin: auto 0;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    font-size: 14px;
+    color: var(--second-white);
+}
