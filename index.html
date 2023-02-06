@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
     <title>7 Days of Code</title>
 </head>
 <body>
@@ -16,5 +17,48 @@
         <h1 class="header__avatar--name">Olá, Sônia</h1>
         <p class="avatar__info">Mais 4 consultas hoje</p>
     </header>    
+    <main class="main">
+        <section class="appointments">
+            <h2 class="appointment__today">Hoje</h2>
+
+            <ul class="appointment__list">
+                <li class="appointment__item">
+                    <div class="appointment__container">
+                        <img src="./assets/img/perfil-2.png" alt="Perfil da Luciana" class="appointment__avatar">    
+                        <div class="appointment__info--labels">
+                            <h2 class="appointment__name">Luciana Dias</h2>
+                            <p class="appointment__type--remote">Consulta remota</p>
+                        </div>
+                        <div alt="icone de chat" class="appointment__icon--chat"></div>
+                    </div>
+                    <hr class="appointment__divisor">
+                    <p class="appointment__time">14:00 - 15:00 (1 hora)</p>
+                    <div class="appointment__container--buttons">
+                        <button class="appointment__video">Ligar por vídeo</button>
+                        <button class="appointment__audio">Ligar por áudio</button>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="appointment__list">
+                <li class="appointment__item">
+                    <div class="appointment__container">
+                        <img src="./assets/img/perfil-2.png" alt="Perfil da Luciana" class="appointment__avatar">    
+                        <div class="appointment__info--labels">
+                            <h2 class="appointment__name">Larissa Santana</h2>
+                            <p class="appointment__type--local">Consulta no local</p>
+                        </div>
+                        <div alt="icone de chat" class="appointment__icon--chat"></div>
+                    </div>
+                    <hr class="appointment__divisor">
+                    <p class="appointment__time">16:00 - 17:00 (1 hora)</p>
+                    <div class="appointment__container--buttons">
+                        <button class="appointment__address">Ver endereço</button>
+                    </div>
+                </li>
+            </ul>
+
+        </section>
+    </main>
 </body>
 </html>
