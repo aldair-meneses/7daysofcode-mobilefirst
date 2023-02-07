@@ -11,3 +11,13 @@ footer {
     position: fixed;
     bottom: 0;
 }
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__button {
+    background-color: var(--primary-white);
+    border: none;
+}
