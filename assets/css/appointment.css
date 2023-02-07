@@ -8,6 +8,7 @@
 
 .appointment__list {
     margin: 0 auto;
+    max-width: 360px;
     width: calc(100% - 2rem);
     background-color: var(--primary-white);
     backdrop-filter: blur(11px);
