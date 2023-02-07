@@ -1,0 +1,14 @@
+.more__container {
+    position: fixed;
+    bottom: 4rem;
+    right: 1rem;
+}
+
+.more__buttons {
+    display: block;
+}
+
+.more__buttons:nth-child(1), .more__buttons:nth-child(2){
+    display: none;
+}
+
