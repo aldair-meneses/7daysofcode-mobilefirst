@@ -1,4 +1,5 @@
 .appointment__today {
+    margin-bottom: 0.5rem;
     margin-left: 1rem;
     font-size: 16px;
     font-weight: 700;
@@ -11,26 +12,30 @@
     background-color: var(--primary-white);
     backdrop-filter: blur(11px);
     border-radius: 0.5rem;
-}
-
-.appointment__item {
-    padding: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .appointment__container {
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin: 0 1rem;
+    padding: 1rem;
+}
+
+.appointment__divisor {
+    width: 100%;
+    height: 1px;
+    background-color: var(--primary-gray);
+    opacity: 0.1;
 }
 
 .appointment__name {
     font-family: var(--main-font);
+    margin-bottom: 0.5rem;
     font-weight: 700;
-    font-size: 14;
+    font-size: 14px;
     color: var(--primary-gray);
 }
-
 
 .appointment__icon--chat {
     background-image: url("../img/chat-icon.svg");
@@ -51,7 +56,6 @@
 }
 
 .appointment__type--remote {
-    margin: 0.5rem 0;
     font-size: 12px;
     font-weight: 400;
     color: var(--second-white);
@@ -66,7 +70,23 @@
     vertical-align: middle;
     width: 16px;
     height: 16px;
+}
 
+.appointment__type--local {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--second-white);
+}
+
+.appointment__type--local::before {
+    content: " ";
+    display: inline-block;
+    background-image: url("../img/pin.svg");
+    background-repeat: no-repeat;
+    margin: 0 0.5rem 0 0;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
 }
 
 .appointment__time {
@@ -76,17 +96,16 @@
     font-weight: 500;
 }
 
-
-
 .appointment__container--buttons {
     margin: 1rem 0;
-    gap: 1rem;
     display: flex;
     justify-content: center;
+    gap: 1.25rem;
+    padding: 0 1rem 1rem 1rem;
 }
 
 .appointment__video {
-    padding: 1rem;
+    padding: 1rem 1.5rem;
     border: none;
     border-radius: 8px;
     background-color: var(--primary-orange);
@@ -97,14 +116,13 @@
 }
 
 .appointment__audio {
-    padding: 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
     border: none;
-    border-radius: 8px;
     background-color: var(--primary-white);
     border: 1px solid #ECECEC;
     color: var(--primary-black);
     font-weight: 500;
-    border-radius: 8px;
 }
 
 .appointment__address {
@@ -112,8 +130,9 @@
     color: var(--primary-white);
     font-weight: 500;
     font-size: 14px;
-    width: 90%;
+    width: 100%;
     padding: 1rem;
     border-radius: 0.5rem;
     border: none;
 }
+
