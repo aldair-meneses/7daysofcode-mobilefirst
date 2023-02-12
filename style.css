@@ -1,7 +1,7 @@
 @import url('./assets/css/header.css');
 @import url('./assets/css/appointment.css');
 @import url('./assets/css/footer.css');
-@import url('./assets/css/more.css');
+@import url('./assets/css/extra.css');
 :root {
     --main-font: 'Montserrat', sans-serif;
     --primary-gray: #464646;

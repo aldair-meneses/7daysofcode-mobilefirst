@@ -228,51 +228,46 @@
                     </div>
                 </li>
             </ul>
-        </section>
-        
-        <section class="extra">
-                <ul class="extra__list">
-                    <li class="extra__item--toggle">
-                        <input type="checkbox" name="more-tab" id="toggle-more">
-                    </li>
-                    <li class="extra__item--collapsed">
-                        <span class="extra__item--description">Nova consulta na casa do paciente</span>
-                        <button class="extra__item--video"></button>
-                    </li>
-                    <li class="extra__item--collapsed">
-                        <span class="extra__item--description">Nova consulta na casa do paciente</span>
-                        <button class="extra__item--local"></button>
-                    </li>
-                    <li class="extra__item--expanded">
-                        <label for="toggle-more">
-                            <button src="./assets/img/more.svg" alt="Mais opções" id="toggle-button" class="button__toggle"></button>
-                        </label>
-                    </li>
-                </ul>
+        </section>  
+    </main>
+    <section class="extra">
+        <input type="checkbox" name="more-tab" id="toggle-more" class="extra__item--toggle">
+        <ul class="extra__list">
+            <li class="extra__item--collapsed">
+                <span class="extra__item--description">Nova consulta na casa do paciente</span>
+                <button class="extra__item--video"></button>
+            </li>
+            <li class="extra__item--collapsed">
+                <span class="extra__item--description">Nova consulta na casa do paciente</span>
+                <button class="extra__item--local"></button>
+            </li>
+            <li class="extra__item--expanded">
+                <label for="toggle-more">
+                    <span src="./assets/img/more.svg" alt="Mais opções" id="toggle-button" class="button__toggle"></span>
+                </label>
+            </li>
+        </ul>
+</section>      
+    <footer>
+        <section class="footer">
+            <div class="footer__button--container">
+                <button class="footer__button footer__button--appointments"><img src="./assets/img/date.svg" alt="Consultas"></button>
+                <p class="footer__button--text button--active">Consultas</p>
+            </div>
+            <div class="footer__button--container">
+                <button class="footer__button footer__button--consumers"><img src="./assets/img/consumers.svg" alt="Calendário"></button>
+                <p class="footer__button--text">Clientes</p>
+            </div>
+            <div class="footer__button--container">
+                <button class="footer__button footer__button--report"><img src="./assets/img/charts.svg" alt="Relatórios"></button>
+                <p class="footer__button--text">Relatórios</p>
+            </div>
+            <div class="footer__button--container">
+                <button class="footer__button footer__button--menu"><img src="./assets/img/menu.svg" alt="Menu"></button>
+                <p class="footer__button--text">Menu</p>
             </div>
         </section>
-
-        <footer>
-            <section class="footer">
-                <div class="footer__button--container">
-                    <button class="footer__button footer__button--appointments"><img src="./assets/img/date.svg" alt="Consultas"></button>
-                    <p class="footer__button--text button--active">Consultas</p>
-                </div>
-                <div class="footer__button--container">
-                    <button class="footer__button footer__button--consumers"><img src="./assets/img/consumers.svg" alt="Calendário"></button>
-                    <p class="footer__button--text">Clientes</p>
-                </div>
-                <div class="footer__button--container">
-                    <button class="footer__button footer__button--report"><img src="./assets/img/charts.svg" alt="Relatórios"></button>
-                    <p class="footer__button--text">Relatórios</p>
-                </div>
-                <div class="footer__button--container">
-                    <button class="footer__button footer__button--menu"><img src="./assets/img/menu.svg" alt="Menu"></button>
-                    <p class="footer__button--text">Menu</p>
-                </div>
-            </section>
-        </footer>
-        </section>
-    </main>
+    </footer>
+    <script src="./index.js"></script>
 </body>
 </html>
