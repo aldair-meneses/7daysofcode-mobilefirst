@@ -1,5 +1,7 @@
 .extra__list {
     display: flex;
+    gap: 1rem;
+    margin: 0 0.5rem;
     position: fixed;
     flex-direction: column;
     align-items: end;
@@ -38,19 +40,24 @@ input[name="more-tab"]:checked~ul > .extra__item--collapsed {
     border-radius: 20px;
 }
 
+.extra__item--description:nth-child(1) {
+    flex-shrink: 6;
+}
+
 input[id=toggle-more] {
     display: none;
 }
 
 .button__toggle {
     display: block;
-    position: relative;
     background:no-repeat  url('../img/more.svg');
-    width: 64px;
+    width: 60px;
     height: 56px;
     border: none;
     cursor: pointer;
 } 
+
+
 
 .extra__item--video {
     display: inline-block;
@@ -63,7 +70,6 @@ input[id=toggle-more] {
 
 .extra__item--local {
     background:no-repeat  url('../img/local-appoint.svg');
-    margin: 1.5rem 0;
     width: 64px;
     height: 56px;
     border: none;
