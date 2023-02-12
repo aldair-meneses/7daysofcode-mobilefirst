@@ -1,14 +1,65 @@
-.more__container {
+.extra__list {
     position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
     bottom: 4rem;
-    right: 1rem;
+    left: 5rem;
 }
 
-.more__buttons {
-    display: block;
+.extra__item--collapsed {
+    display: flex;
+    align-items: center;
 }
 
-.more__buttons:nth-child(1), .more__buttons:nth-child(2){
+.extra__item--description {
+    font-size: 12px;
+}
+
+input[name="more-tab"] {
     display: none;
 }
 
+.button__toggle {
+    display: inline-block;
+    background-image: url('../img/more.svg');
+    height: 64px;
+    width: 64px;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.extra__item--video {
+    display: inline-block;
+    background-image: url('../img/video-call.svg');
+    background-position: center;
+    width: 56px;
+    height: 56px;
+    border: none;
+    cursor: pointer;
+}
+
+.extra__item--local {
+    display: inline-block;
+    background-image: url('../img/local-appoint.svg');
+    background-position: center;
+    width: 64px;
+    height: 64px;
+    border: none;
+    cursor: pointer;
+}
+
+
+input[name="more-tab"]:checked~.button--expanded {
+    opacity: 1;
+    transition: opacity 600ms ease-in-out;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.container-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
