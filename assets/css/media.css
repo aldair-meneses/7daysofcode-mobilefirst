@@ -3,6 +3,10 @@
         flex-grow: 0;
         flex-basis: calc(50% - 0.5rem);
     }
+
+    .extra {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 1024px){
@@ -44,7 +48,14 @@
 
     .main-header {
         padding: 0 12rem;
-    }
+    }  
+
+    section.form {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 0rem 3.5rem 2rem 3.5rem;
+    }  
 
     .footer {
         display: none;
@@ -62,6 +73,6 @@
 
     .appointment__list li.appointment__item:nth-child(4) {
         flex-grow: 0;
-        flex-basis:calc(34%);
+        flex-basis: calc(34%);
     }
 }
