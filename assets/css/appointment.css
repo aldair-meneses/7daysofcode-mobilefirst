@@ -26,11 +26,6 @@
     flex-grow: 1;
 }
 
-
-.appointment__list li.appointment__item:nth-child(3) {
-    flex-grow: 0;
-    flex-basis: calc(50% - 0.5rem);
-}
 .appointment__container {
     display: flex;
     gap: 1rem;
