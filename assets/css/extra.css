@@ -1,7 +1,6 @@
 .extra__list {
     display: flex;
     gap: 1rem;
-    margin: 0 0.5rem;
     position: fixed;
     flex-direction: column;
     align-items: end;
@@ -48,17 +47,12 @@ input[id=toggle-more] {
     display: none;
 }
 
-.button__toggle {
-    display: block;
-    background:no-repeat  url('../img/more.svg');
+.button__toggle:focus {
     width: 60px;
     height: 56px;
-    border: none;
+    background: none;
     cursor: pointer;
-    filter: drop-shadow(0 3px 6px #4894FF90);
-} 
-
-
+}
 
 .extra__item--video {
     display: inline-block;
@@ -88,5 +82,3 @@ input[id=toggle-more] {
 .extra--blur {
     height: 100%;
 }
-
-@media screen and (min-width:320px) { } @media screen and (min-width:480px) { } @media screen and (min-width:600px) { } @media screen and (min-width:768px) { } @media screen and (min-width:992px) { } 
