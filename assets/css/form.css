@@ -1,0 +1,83 @@
+.form {
+    display: none;
+}
+
+.form form {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--primary-white);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.label__name {
+    display: block;
+    width: 100%;
+}
+
+.form input {
+    outline: none;
+    width: 50%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--second-gray);
+    background-color: var(--primary-white);
+}
+
+.invalid {
+    display: none;
+}
+
+
+.form input:invalid {
+    border: 2px solid var(--invalid-value);
+}
+
+.form input:invalid~.invalid{
+    display: block;
+    width: 50%;
+    color: var(--invalid-value);
+    font-size: 12px;
+}
+
+.form label {
+    display: block;
+    width: 50%;
+}
+
+.form select {
+    width: 50%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--second-gray);
+    background-color: var(--primary-white);
+}
+
+.form select:invalid {
+    border: 2px solid var(--invalid-value);
+}
+
+.form select:invalid {
+    display: block;
+
+}
+
+.save-appointment {
+    display: block;
+    padding: 1rem;
+    background-color: var(--primary-blue);
+    color: var(--primary-white);
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+}
+
+textarea {
+    width: 50%;
+    border-radius: 0.5rem;
+}
