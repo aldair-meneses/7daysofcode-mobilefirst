@@ -18,7 +18,7 @@ footer {
 }
 
 .footer__button {
-    background-color: var(--primary-white);
+    background: var(--primary-white);
     cursor: pointer;
     border: none;
 }
