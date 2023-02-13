@@ -1,0 +1,23 @@
+.sidebar {
+    display: none;
+}
+
+.sidenav__button--container {
+    display: flex;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.sidenav__button {
+    border: none;
+    background-color: var(--primary-white);
+}
+
+.button--active {
+    color: var(--primary-blue);
+}
+
+.sidenav__button--text:hover {
+    color: var(--primary-blue);
+    cursor: pointer;
+}
