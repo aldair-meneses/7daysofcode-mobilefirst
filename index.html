@@ -237,8 +237,30 @@
                         </div>
                     </li>
                 </ul>
-            </section>  
-        </div>
+            </div>
+    </section>
+    <section class="form">
+        <form action="">
+            <label for="name" class="label__name">Nome</label>
+                <input type="text" name="name" id="name" placeholder="Nome" required>
+                <span class="invalid">Preencha o campo</span>
+            
+            <label for="appointmnet-type" class="label__select" aria-required="true">Escolha um tipo de consulta</label>
+                <select name="appointment-type" id="appointment" required>
+                    <option value="" disabled selected>Tipo de consulta</option>
+                    <option value="local">Consula local</option>
+                    <option value="remoto">Consulta remota</option>
+                </select>
+                <span class="invalid">É obrigatório escolher um tipo</span>
+            <label for="appointmnet-date" class="appointment__date">Data da consulta</label>
+            <input type="date" name="date" id="appointment-date" required>
+            <label for="appointment-time" class="label__time">Hora da consulta</label>
+            <input type="time" name="time" id="appointment-time" required>
+            <label for="ps">observações</label>
+            <textarea name="ps" id="ps" rows="10" placeholder="Observações"></textarea>
+            <button class="save-appointment">Salvar consulta</button>
+        </form>
+    </section>  
     </main>
     <section class="extra">
         <input type="checkbox" name="more-tab" id="toggle-more" class="extra__item--toggle">
@@ -252,14 +274,13 @@
                 <button class="extra__item extra__item--local"></button>
             </li>
             <li class="extra__item--expanded">
-                <label for="toggle-more">
-                    <span src="./assets/img/more.svg" alt="Mais opções" id="toggle-button" class="button__toggle"></span>
+                <label for="toggle-more" class="label__float-button">
+                    <span alt="Mais opções" id="toggle-button"><img src="./assets/img/more.svg" class="button__toggle"></span>
                 </label>
             </li>
         </ul>
-</section>      
-    <footer>
-        <section class="footer">
+</section>     
+    <footer class="footer">
             <div class="footer__button--container">
                 <button class="footer__button footer__button--appointments"><img src="./assets/img/date.svg" alt="Consultas"></button>
                 <p class="footer__button--text button--active">Consultas</p>
@@ -276,7 +297,6 @@
                 <button class="footer__button footer__button--menu"><img src="./assets/img/menu.svg" alt="Menu"></button>
                 <p class="footer__button--text">Menu</p>
             </div>
-        </section>
     </footer>
     <script src="./index.js"></script>
 </body>
