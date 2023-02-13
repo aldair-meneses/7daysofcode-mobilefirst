@@ -1,7 +1,7 @@
 .main-header {
     display: grid;
     grid-template-columns: calc(57px + 1rem) auto auto;
-    margin: 2rem 1rem;
+    margin: 1rem 1rem;
 }
 
 .header__avatar--photo {
