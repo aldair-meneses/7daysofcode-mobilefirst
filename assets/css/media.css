@@ -16,17 +16,52 @@
     }
 
     .appointment__item {
-        flex-basis: 30%;
+        flex-basis: 40%;
     }
     .appointment__list li.appointment__item:nth-child(3) {
         flex-grow: 0;
-        flex-basis: 30%;
+        flex-basis: calc(50% - 0.5rem);
     }
 
     .appointment__list li.appointment__item:nth-child(4) {
         flex-grow: 0;
-        flex-basis:calc(33%) ;
+        flex-basis:calc(50% - 0.5rem);
     }
 
+    div.sidebar {
+        display: block;
+        position: fixed;
+        height: 100%;
+        width: 160px;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: var(--primary-white);
+    }
+    .main {
+        margin-left: 160px
+    }
+
+    .main-header {
+        padding: 0 12rem;
+    }
+
+    .footer {
+        display: none;
+    }
 }
 
+@media only screen and (min-width: 1440px) {
+    .appointment__item {
+        flex-basis: 30%;
+    }
+    .appointment__list li.appointment__item:nth-child(3) {
+        flex-grow: 0;
+        flex-basis: calc(30%);
+    }
+
+    .appointment__list li.appointment__item:nth-child(4) {
+        flex-grow: 0;
+        flex-basis:calc(34%);
+    }
+}
