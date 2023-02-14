@@ -31,12 +31,15 @@
     display: none;
 }
 
-
-.form input:invalid {
+.form input:invalid:focus:invalid {
     border: 2px solid var(--invalid-value);
 }
 
-.form input:invalid~.invalid{
+.form select:invalid:focus~.invalid {
+    border: 2px solid var(--invalid-value);
+}
+
+.form input:invalid:focus~.invalid{
     display: block;
     width: 50%;
     color: var(--invalid-value);
@@ -56,7 +59,7 @@
     background-color: var(--primary-white);
 }
 
-.form select:invalid {
+.form select:invalid:focus {
     border: 2px solid var(--invalid-value);
 }
 
