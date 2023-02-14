@@ -32,6 +32,10 @@
         flex-basis:calc(50% - 0.5rem);
     }
 
+    .appointment__video, .appointment__audio {
+        width: 50%;
+    }
+
     div.sidebar {
         display: block;
         position: fixed;
@@ -54,7 +58,7 @@
         display: flex;
         justify-content: center;
         width: 100%;
-        padding: 0rem 3.5rem 2rem 3.5rem;
+        padding: 0rem 7rem 2rem 7rem;
     }  
 
     .footer {
